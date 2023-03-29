@@ -73,10 +73,12 @@ int main() {
     }
 
     if(cycle_exists) {
-        cout<<"Cycle Exists"<<endl;
+        // cout<<"Cycle Exists"<<endl;
+        cout<<"YES"<<endl;
     }
     else {
-        cout<<"NO cycle"<<endl;
+        // cout<<"NO cycle"<<endl;
+        cout<<"NO"<<endl;
     }
 
 }

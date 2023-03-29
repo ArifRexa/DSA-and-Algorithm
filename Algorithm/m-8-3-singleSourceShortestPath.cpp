@@ -28,7 +28,7 @@ void BFS(int src)
             if (visited[adj_node] == 0)
             {
                 visited[adj_node] = 1;
-                level[adj_node] = level[head]+1;
+                level[adj_node] = level[head] + 1;
                 q.push(adj_node);
             }
         }
@@ -53,10 +53,8 @@ int main()
 
     for (int i = 0; i < nodes; i++)
     {
-        cout<<"node: "<<i<<" ==> level: "<<level[i]<<"\n";
-       
+        cout << "node: " << i << " ==> level: " << level[i] << "\n";
     }
-    
 
     return 0;
 }
@@ -112,4 +110,17 @@ node: 2 ==> level: 4
 node: 3 ==> level: 5
 node: 4 ==> level: 3
 node: 5 ==> level: 2
+
+
+
+
+6 7
+
+0 1
+0 3
+0 4
+1 2
+1 5
+2 4
+5 4
 */
